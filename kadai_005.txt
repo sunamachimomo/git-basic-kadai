@@ -1,0 +1,28 @@
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+kouzan-no-MacBook-Pro:~ shoko_tasaka$ mkdir git_challenge
+kouzan-no-MacBook-Pro:~ shoko_tasaka$ cd git_challenge
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git init
+Initialized empty Git repository in /Users/shoko_tasaka/git_challenge/.git/
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ echo "Hello, world" >> hello_world.txt
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git add .
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 823519d] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git status
+On branch main
+nothing to commit, working tree clean
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ echo "こんにちは、世界" >> hello_world.txt
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git add .
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git commit -m "日本語訳を追記"
+[main 4fa5b3c] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git status
+On branch main
+nothing to commit, working tree clean
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ git log --oneline
+4fa5b3c (HEAD -> main) 日本語訳を追記
+823519d hello_world.txtを追加
+kouzan-no-MacBook-Pro:git_challenge shoko_tasaka$ pwd
